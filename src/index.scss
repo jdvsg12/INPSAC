@@ -1,0 +1,13 @@
+// abstracts
+
+@use './scss/abstracts/variable';
+@use './scss/abstracts/mixins';
+
+// base
+
+@use './scss/base/base';
+@use './scss/base/resets';
+
+// components
+@use './scss/componentes/header.module.scss';
+@use './scss/componentes/home.module.scss'

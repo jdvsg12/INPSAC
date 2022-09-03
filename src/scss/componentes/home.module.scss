@@ -1,0 +1,7 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variable';
+
+button {
+    @include button-main;
+    
+}

@@ -1,0 +1,9 @@
+
+@import "../abstracts/variable";
+
+html,
+body {
+  font-family: "Titillium Web",  sans-serif;
+  font-weight: map-get($font, "title");
+  color: map-get($color, "dark");
+}

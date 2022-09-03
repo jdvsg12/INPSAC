@@ -1,0 +1,57 @@
+@import "../abstracts/variable";
+
+
+@mixin center-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@mixin left-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}
+
+@mixin right-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+}
+
+@mixin space-around-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+@mixin space-between-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@mixin button-main {
+    background: map-get($background-button, "main" );
+    text-transform: uppercase;
+    color: map-get($color, "dark");
+    font-size: map-get($text-size, "button");
+    font-weight: map-get($font, "title");
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(143, 143, 143);
+    letter-spacing: 2.5px;
+    transition: all 0.4s ease 0s;
+
+    &:hover {
+        background: map-get($background-button, "secondary");
+        color: map-get($color , "light-hover");   
+        // box-shadow: map-get($button-box-shadow, "shadow");
+        border: 1px solid rgb(143, 143, 143);
+        // transform: translateY(-5px);
+    }
+}
