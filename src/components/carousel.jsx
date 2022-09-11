@@ -19,12 +19,18 @@ const Carousel = () => {
             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="mySwiper"
         >
-            {carousel.map(({ id, image, alt}) => {
+            {carousel.map(({ id, image, alt, text }) => {
                 return (
                     <SwiperSlide key={id}>
-                        <img 
-                        src={image} 
-                        alt={alt} />
+                        <div className="carousel">
+                            <img
+                                src={image}
+                                alt={alt} />
+
+                            <div className="text-carousel">
+                                {text}
+                            </div>
+                        </div>
                     </SwiperSlide>
                 )
             })}
