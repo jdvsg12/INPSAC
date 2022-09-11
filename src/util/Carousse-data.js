@@ -1,22 +1,26 @@
 const carousel = [
     {
         id: 1,
-        image: "https://i.picsum.photos/id/319/1000/400.jpg?hmac=9iZXFEqdHQnwPcNrRm-cmEIqqAzoVA8eZXPcG2RLI14",
+        image: "https://picsum.photos/1535/400?random=1",
+        alt: "random image",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste."
     },
     {
         id: 2,
-        image: "https://i.picsum.photos/id/443/1000/400.jpg?hmac=BtNvABLklixfPXwuVUH_Md2rZWlmJR-EiJNtm9Xk9hE",
+        image: "https://picsum.photos/1535/400?random=2",
+        alt: "random image",
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste.'
     },
     {
         id: 3,
-        image: "https://i.picsum.photos/id/911/1000/400.jpg?hmac=0R_QVo6YKp1rp4pBnyqJXU_IF18q_YhtLpWQTgoVnQU",
+        image: "https://picsum.photos/1535/400?random=3",
+        alt: "random image",
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste.'
     },
     {
         id: 4,
-        image: "https://i.picsum.photos/id/992/1000/400.jpg?hmac=voJaCthQhdTGclOy_9xStPJtKzKH76Ez_SHJR4raOPU",
+        image: "https://picsum.photos/1535/400?random=4",
+        alt: "random image",
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iste.'
     }
 ]
