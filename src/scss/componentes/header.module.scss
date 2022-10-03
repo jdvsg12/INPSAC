@@ -6,7 +6,7 @@ header {
   flex-direction: row;
   background: map-get($background, "main");
   width: 100vw;
-  height: 15vh;
+  height: 10vh;
 
   nav {
     @include center-flexbox;

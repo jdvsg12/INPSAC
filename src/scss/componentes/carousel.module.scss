@@ -2,22 +2,26 @@
 @import "../abstracts/variable";
 
 .carousel {
-    width: 100vw;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: flex-end;
+  width: 100vw;
+  height: 520px;
 
-    img {
-        position: absolute;
-    }
-    .text-carousel {
-        @include relative-content-left;
-        background: map-get($background, "main");
-        font-size: map-get($text-size, "title");
-        font-weight: map-get($font, "title");
-        color: map-get($color, "light");
-        width: 30%;
-        height: 30%;
-        padding: 2rem;
-        margin: 3rem;
-    }
+  img {
+    position: absolute;
+  }
+  .text-carousel {
+    @include relative-content-left;
+    background: map-get($background, "secondary");
+    font-size: map-get($text-size, "title");
+    font-weight: map-get($font, "title");
+    color: map-get($color, "light");
+    text-shadow: 0.5px 0.5px 5px black;
+    border-radius: 2rem 0;
+    width: 30%;
+    padding: 2rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+  }
 }
