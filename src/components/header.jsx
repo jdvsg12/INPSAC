@@ -8,14 +8,13 @@ const Header = () => {
         <header>
 
             <div className="logo">
-                <h1><Link to={navBar[0].link}>LOGO</Link></h1>
+                <h1><Link to={navBar[0].link}>INPSAC</Link></h1>
             </div>
             <nav>
             {navBar.map(link => {
-
-                return (
+                return (    
                         <div key={link.id}>
-                            <Link to={link.link} >{link.text}</Link>
+                            <Link to={link.link}>{link.text}</Link>
                         </div>
                 )
             }

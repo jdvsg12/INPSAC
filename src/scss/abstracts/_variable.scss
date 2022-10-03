@@ -7,14 +7,14 @@ $font: (
 );
 
 $color: (
-  "light": white,
+  "light": rgb(180, 110, 62),
   "light-hover": rgba(254, 254, 254, 0.851),
   "dark": black,
   "dark-hover": rgb(110, 135, 184),
 );
 
 $background: (
-  "main": rgb(6, 57, 81),
+  "main": rgb(242,224,189),
   "secondary": rgb(70, 92, 132),
 );
 
@@ -28,6 +28,7 @@ $text-size: (
   "subTitle": 1rem,
   "paragraph": 0.5rem,
   "button": 0.8rem,
+  "anchor" : 0.5rem,
 );
 
 $button-box-shadow: (
