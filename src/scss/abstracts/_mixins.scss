@@ -36,6 +36,11 @@
     gap: 2rem;
 }
 
+@mixin relative-content-left {
+    position: relative;
+    z-index: 999;
+}
+
 @mixin button-main {
     background: map-get($background-button, "main" );
     text-transform: uppercase;

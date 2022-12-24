@@ -1,8 +1,4 @@
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import {faFacebookF, faTwitter, faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 const footer = [
   {

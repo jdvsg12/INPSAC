@@ -1,14 +1,13 @@
 import React from 'react'
-// import Carousel from './carousel'
+import Carousel from './carousel'
 
 function Home() {
   return (
     <div>
-      {/* <Carousel /> */}
+      <Carousel />
       <h1>this is Home</h1>
       <button>para oprimir</button>
-      </div>
+    </div>
   )
 }
-
 export default Home

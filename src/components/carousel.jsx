@@ -1,45 +1,41 @@
-// import React from 'react'
-// import service from '../util/Services-data'
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-// import 'swiper/scss';
-// import 'swiper/scss/navigation';
-// import 'swiper/scss/pagination';
+import React from "react";
+import carousel from "../util/Carousse-data";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
+const Carousel = () => {
 
+    return (
+        <Swiper
+            // key={carousel.id}
+            cssMode={true}
+            navigation={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            className="mySwiper"
+        >
+            {carousel.map(({ id, image, alt, text }) => {
+                return (
+                    <SwiperSlide key={id}>
+                        <div className="carousel">
+                            <img
+                                src={image}
+                                alt={alt} />
 
-// const Carousel = () => {
+                            <div className="text-carousel">
+                                {text}
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                )
+            })}
+        </Swiper >
+    )
+}
 
-//     return (
-
-//         service.map(carousel => {
-//             return (
-//                 <Swiper
-//                     key={carousel.id}
-//                     modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-//                     spaceBetween={50}
-//                     slidesPerView={3}
-//                     navigation
-//                     pagination={{ clickable: true }}
-//                     scrollbar={{ draggable: true }}
-//                     onSwiper={(swiper) => console.log(swiper)}
-//                     onSlideChange={() => console.log('slide change')}
-//                 >
-//                     <SwiperSlide>
-//                         <img
-//                             src={carousel.image}
-//                             alt="algo"
-//                             layout="fill"
-//                             objectFit="cover"
-//                         />
-//                     </SwiperSlide>
-
-
-//                 </Swiper>
-//             )
-//         })
-
-//     )
-// }
-
-// export default Carousel
+export default Carousel
