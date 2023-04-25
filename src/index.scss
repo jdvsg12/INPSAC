@@ -9,6 +9,8 @@
 @use './scss/base/resets';
 
 // components
-@use './scss/componentes/header.module.scss';
-@use './scss/componentes/home.module.scss';
-@use './scss/componentes/carousel.module.scss';
+@use './scss/components/header.module.scss';
+@use './scss/components/home.module.scss';
+@use './scss/components/carousel.module.scss';
+@use './scss/components/footer.module.scss';
+
