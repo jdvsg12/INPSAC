@@ -1,24 +1,29 @@
+@use "../abstracts/variable";
 @import "../abstracts/mixins";
 @import "../abstracts/variable";
 
 footer{
-    @include space-between-flexbox;
+    display: flex;
+    align-items: center;
     flex-direction: column;
     background: map-get($background , 'main' );
-    padding: 0 20%;
+    padding-top:1rem ;
     width: 100vw;
     height: 18vh;
     
     .container{
         @include space-around-flexbox;
         border-bottom: .12rem solid black;
-        padding: 1rem 0;
+        padding: 1rem;
 
     .social-media{
         display: flex;
         flex-direction: row;
+        gap: 3rem;
 
         a{
+            padding: .7rem 1rem;
+
             background-color: map-get($color, "light" );
             border-radius: 50%;
             color: map-get($background-button, "main");
@@ -44,10 +49,10 @@ footer{
     
     .anchorFooter{ 
         @include space-between-flexbox;
-        a{
-            text-transform: uppercase;
+        a{  
             color: map-get($color, "light");
-            font-size: map-get($text-size , "anchor" );
+            font-family: variable.$footer-font;
+            font-size: map-get($text-size , "subtitle" );
             font-weight: map-get($font, "title");
             letter-spacing: 2px;
             transition: all 0.4s ease 0s;

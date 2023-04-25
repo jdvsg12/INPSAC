@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,700;0,900;1,300;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+$header-font : 'Bonheur Royale', cursive;
+$nav-font :  'Alegreya', serif;
+$footer-font: 'Roboto', sans-serif;
+
 $font: (
-  "logo": 900,
+  "logo": 100,
   "title": 600,
   "subTitle": 400,
   "paragraph": 300,
@@ -11,6 +20,7 @@ $color: (
   "light-hover": rgba(254, 254, 254, 0.851),
   "dark": black,
   "dark-hover": rgb(110, 135, 184),
+  "brown": rgb(62,32,20),
 );
 
 $background: (

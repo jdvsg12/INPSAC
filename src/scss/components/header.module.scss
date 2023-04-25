@@ -1,3 +1,4 @@
+@use "../abstracts/variable";
 @import "../abstracts/mixins";
 @import "../abstracts/variable";
 
@@ -6,19 +7,33 @@ header {
   flex-direction: row;
   background: map-get($background, "main");
   width: 100vw;
-  height: 10vh;
+  height: 12vh;
+
+  .logo{
+    h1 a {
+      font-family: variable.$header-font;
+      color: map-get($color, "brown" );
+      font-size: 1.2em;
+      font-weight: map-get($font, "logo");
+    }
+    @include center-flexbox;
+    img{
+      width: 12vh;
+      height: 12vh;
+    }
+  }
 
   nav {
     @include center-flexbox;
-    font-size: map-get($text-size, "subtitle");
+    font-size: 1.2rem;
     flex-direction: row;
-    margin: 0 3rem;
+    margin: 0 4rem;
+    gap: 3rem;
 
     a {
-      text-transform: uppercase;
-      color: map-get($color, "light");
-      font-weight: map-get($font, "title");
-      letter-spacing: 2.5px;
+      color: map-get($color, "brown");
+      font-family: variable.$nav-font;
+      font-weight: map-get($font, "subtitle");
       transition: all 0.4s ease 0s;
 
       &:hover {
@@ -28,13 +43,13 @@ header {
     }
   }
 
-  h1 {
-    color: map-get($color, "light");
-    margin: 0 3rem;
-    font-weight: map-get($font, "logo") !important;
+  // h1 {
+  //   color: map-get($color, "light");
+  //   margin: 0;
+  //   font-weight: map-get($font, "logo") !important;
 
-    a {
-      color: map-get($color, "light");
-    }
-  }
+  //   a {
+  //     color: map-get($color, "light");
+  //   }
+  // }
 }
